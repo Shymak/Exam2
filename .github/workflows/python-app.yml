@@ -34,9 +34,10 @@ jobs:
 
     - name: Test with unittest
       run: |
-        python3 -m unittest discover -s tests -p "Sum_test.py"
+        python3 -m unittest Sum_test.py
       env:
         CI: true
+
 
     - name: Login to Docker Hub
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
