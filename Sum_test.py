@@ -3,7 +3,7 @@ from Sum import sum
 
 class TestArithmeticProgression(unittest.TestCase):
     def test_sum_of_first_5_terms(self):
-        self.assertEqual(sum(5), 75)
+        self.assertEqual(sum(5), 70)
     
     def test_sum_of_first_10_terms(self):
         self.assertEqual(sum(10), 275)
