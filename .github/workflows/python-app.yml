@@ -34,7 +34,7 @@ jobs:
 
     - name: Test with unittest
       run: |
-        python3 -m unittest discover -s tests -p Sum_test.py"
+        python3 -m unittest discover -s tests -p "Sum_test.py"
       env:
         CI: true
 
